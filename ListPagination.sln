@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListPagination.Presentation
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListPagination.Core.Domain", "ListPagination.Core.Domain\ListPagination.Core.Domain.csproj", "{0D97C42D-1A0F-4877-AB9F-5E99D1C08D2B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListPagination.Infrastructure.EmailService", "ListPagination.Infrastructure.EmailService\ListPagination.Infrastructure.EmailService.csproj", "{A9503322-DDEA-489C-80C2-0E258E349987}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListPagination.Core.Application", "ListPagination.Core.Application\ListPagination.Core.Application.csproj", "{CAD18BF0-6AB2-414C-8DF8-84BBC82F477F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{0D97C42D-1A0F-4877-AB9F-5E99D1C08D2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D97C42D-1A0F-4877-AB9F-5E99D1C08D2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D97C42D-1A0F-4877-AB9F-5E99D1C08D2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9503322-DDEA-489C-80C2-0E258E349987}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9503322-DDEA-489C-80C2-0E258E349987}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9503322-DDEA-489C-80C2-0E258E349987}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9503322-DDEA-489C-80C2-0E258E349987}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAD18BF0-6AB2-414C-8DF8-84BBC82F477F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAD18BF0-6AB2-414C-8DF8-84BBC82F477F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAD18BF0-6AB2-414C-8DF8-84BBC82F477F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAD18BF0-6AB2-414C-8DF8-84BBC82F477F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
