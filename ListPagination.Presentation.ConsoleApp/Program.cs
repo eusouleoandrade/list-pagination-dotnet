@@ -9,11 +9,13 @@ namespace ListPagination.Presentation.ConsoleApp
     {
         private static List<Customer> _customerList;
         private static IEmailService _emailService;
+        private static int _partitioningAmount;
 
         static void Main(string[] args)
         {
             _emailService = new EmailService();
             _customerList = GetCustomers();
+            _partitioningAmount = 5;
 
             // Solution One
             RunSolutionOne();
@@ -36,7 +38,7 @@ namespace ListPagination.Presentation.ConsoleApp
         {
             var customer = new List<Customer>();
 
-            for (int i = 0; i < 35; i++)
+            for (int i = 1; i <= 18; i++)
                 customer.Add(
                     new Customer($"FirstName {i}", $"LastName {i}", $"{i}@email.com")
                 );
