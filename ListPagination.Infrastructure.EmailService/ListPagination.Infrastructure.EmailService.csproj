@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ListPagination.Core.Application\ListPagination.Core.Application.csproj" />
+    <ProjectReference Include="..\ListPagination.Core.Domain\ListPagination.Core.Domain.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
