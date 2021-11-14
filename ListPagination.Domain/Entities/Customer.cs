@@ -1,6 +1,6 @@
 using System;
 
-namespace ListPagination.Core.Domain.Entities
+namespace ListPagination.Domain.Entities
 {
     public class Customer
     {

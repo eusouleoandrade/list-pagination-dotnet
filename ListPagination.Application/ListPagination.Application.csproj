@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\ListPagination.Core.Domain\ListPagination.Core.Domain.csproj" />
+    <ProjectReference Include="..\ListPagination.Domain\ListPagination.Domain.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

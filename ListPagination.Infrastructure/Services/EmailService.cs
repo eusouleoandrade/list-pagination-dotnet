@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using ListPagination.Core.Application.Interfaces;
-using ListPagination.Core.Domain.Entities;
+using ListPagination.Application.Interfaces;
+using ListPagination.Domain.Entities;
 
-namespace ListPagination.Infrastructure.EmailService.Services
+namespace ListPagination.Infrastructure.Services
 {
     public class EmailService : IEmailService
     {

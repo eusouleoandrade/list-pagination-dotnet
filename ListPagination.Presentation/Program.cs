@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using ListPagination.Core.Application.Interfaces;
-using ListPagination.Core.Domain.Entities;
-using ListPagination.Infrastructure.EmailService.Services;
+using ListPagination.Application.Interfaces;
+using ListPagination.Domain.Entities;
+using ListPagination.Infrastructure.Services;
 
-namespace ListPagination.Presentation.ConsoleApp
+namespace ListPagination.Presentation
 {
     class Program
     {

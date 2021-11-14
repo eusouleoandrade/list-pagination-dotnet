@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using ListPagination.Core.Domain.Entities;
+using ListPagination.Domain.Entities;
 
-namespace ListPagination.Core.Application.Interfaces
+namespace ListPagination.Application.Interfaces
 {
     public interface IEmailService
     {
