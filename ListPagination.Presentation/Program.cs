@@ -89,6 +89,7 @@ namespace ListPagination.Presentation
         private static List<Customer> GeneratesCustomers(int amount)
         {
             var customer = new List<Customer>();
+            
             for (int i = 1; i <= amount; i++)
                 customer.Add(
                     new Customer($"FirstName {i}", $"LastName {i}", $"{i}@email.com")
