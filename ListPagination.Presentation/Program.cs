@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using ListPagination.Application.Interfaces;
 using ListPagination.Domain.Entities;
@@ -11,11 +12,13 @@ namespace ListPagination.Presentation
     {
         private static List<Customer> _customerList;
         private static IEmailService _emailService;
+        private static int _recordPerPage;
 
         static void Main(string[] args)
         {
             _emailService = new EmailService();
             _customerList = GeneratesCustomers(19);
+            _recordPerPage = Convert.ToInt32(ConfigurationManager.AppSettings.Get("configRecordPerPage"));
 
             // Solution One
             // RunSolutionOne();
@@ -29,13 +32,11 @@ namespace ListPagination.Presentation
 
         private static void RunSolutionOne()
         {
-            int recordPerPage = 20;
-            int countCustomers = _customerList.Count;
-            decimal numberOfPages = Math.Ceiling((decimal)_customerList.Count / (decimal)recordPerPage);
+            decimal numberOfPages = Math.Ceiling((decimal)_customerList.Count / (decimal)_recordPerPage);
 
             for (int currentPage = 0; currentPage < numberOfPages; currentPage++)
             {
-                var customers = _customerList.Skip(recordPerPage * currentPage).Take(recordPerPage).ToList();
+                var customers = _customerList.Skip(_recordPerPage * currentPage).Take(_recordPerPage).ToList();
 
                 if (!customers.Any())
                     break;
@@ -46,15 +47,13 @@ namespace ListPagination.Presentation
 
         private static void RunSolutionTwo()
         {
-            int recordPerPage = 5;
-            int countCustomers = _customerList.Count;
-            decimal numberOfPages = Math.Ceiling((decimal)_customerList.Count / (decimal)recordPerPage);
+            decimal numberOfPages = Math.Ceiling((decimal)_customerList.Count / (decimal)_recordPerPage);
             int currentIndex = 0;
             int currentPage = 1;
 
             do
             {
-                var customers = _customerList.Skip(recordPerPage * currentIndex).Take(recordPerPage).ToList();
+                var customers = _customerList.Skip(_recordPerPage * currentIndex).Take(_recordPerPage).ToList();
 
                 if (!customers.Any())
                     break;
@@ -69,15 +68,13 @@ namespace ListPagination.Presentation
 
         private static void RunSolutiomThree()
         {
-            int recordPerPage = 5;
-            int countCustomers = _customerList.Count;
-            decimal numberOfPages = Math.Ceiling((decimal)_customerList.Count / (decimal)recordPerPage);
+            decimal numberOfPages = Math.Ceiling((decimal)_customerList.Count / (decimal)_recordPerPage);
             int currentIndex = 0;
             int currentPage = 1;
 
             while (currentPage <= numberOfPages)
             {
-                var customers = _customerList.Skip(recordPerPage * currentIndex).Take(recordPerPage).ToList();
+                var customers = _customerList.Skip(_recordPerPage * currentIndex).Take(_recordPerPage).ToList();
 
                 if (!customers.Any())
                     break;

@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/ListPagination.Presentation.ConsoleApp/ListPagination.Presentation.ConsoleApp.csproj",
+                "${workspaceFolder}/ListPagination.Presentation/ListPagination.Presentation.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/ListPagination.Presentation.ConsoleApp/ListPagination.Presentation.ConsoleApp.csproj",
+                "${workspaceFolder}/ListPagination.Presentation/ListPagination.Presentation.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -32,7 +32,7 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/ListPagination.Presentation.ConsoleApp/ListPagination.Presentation.ConsoleApp.csproj",
+                "${workspaceFolder}/ListPagination.Presentation/ListPagination.Presentation.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
